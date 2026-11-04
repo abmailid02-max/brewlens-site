@@ -44,5 +44,19 @@
 </div></section>
 <section class="pilot" id="pilot"><div><div class="eyebrow" style="color:var(--paper);opacity:.7">Pilot</div><h2>Send one drawing. <span class="acc">Get the draft back.</span></h2><p>Pick a part number due for inspection. Compare our draft with how your team does it today.</p><p class="reply">Reply to the message this link came in. Contact details: add before sending.</p></div>
 <ol><li>Share one drawing (PDF) and any certificates. NDA first if you prefer.</li><li>We return the ballooned drawing and draft sheet.</li><li>Your inspector measures as usual. We map the readings.</li><li>You decide whether it saved enough time.</li></ol></section>
+<section class="interest" id="interest">
+<div class="eyebrow">Stay in touch</div>
+<h2>Interested? Leave your details.</h2>
+<form id="lead-form" data-interest="drawing-annotation">
+<label>Name<input name="name" id="lead-name" required maxlength="100" autocomplete="name"></label>
+<label>Email<input name="email" id="lead-email" type="email" required maxlength="150" autocomplete="email"></label>
+<label>Interested in<select name="interest" id="lead-interest" required><option value="drawing-annotation">Drawing annotation</option><option value="part-inspection">Part inspection</option><option value="both">Both</option></select></label>
+<label>Company (optional)<input name="company" id="lead-company" maxlength="100" autocomplete="organization"></label>
+<div class="hp" aria-hidden="true"><label>Website<input name="website" id="lead-website" tabindex="-1" autocomplete="off"></label></div>
+<p class="consent full">We use these details only to contact you about BrewLens.</p>
+<div class="full" style="display:flex;gap:16px;align-items:center;flex-wrap:wrap"><button class="btn" type="submit">Send</button><span id="lead-status" role="status"></span></div>
+</form>
+<script type="module" src="lead-form.js"></script>
+</section>
 <footer><span>BrewLens · Bengaluru</span><span>Sample drawings and readings on these pages are made up for illustration.</span></footer>
 </div></body></html>

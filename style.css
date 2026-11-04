@@ -76,3 +76,15 @@ td.n{font-family:var(--mono);white-space:nowrap}
 .pilot .reply{display:inline-block;margin-top:16px;font:13px var(--mono);border:1px solid var(--paper);padding:9px 12px}
 footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;display:flex;justify-content:space-between;gap:10px 24px;flex-wrap:wrap}
 @media (max-width:860px){.hero,.pilot{grid-template-columns:minmax(0,1fr)}.hero{gap:28px}}
+/* interest form */
+.interest{margin-top:48px}
+.interest h2{font-size:clamp(28px,3.6vw,40px);text-transform:uppercase;margin-top:10px}
+#lead-form{margin-top:20px;max-width:640px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px 16px}
+#lead-form label{display:grid;gap:4px;font:500 12px var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--muted);min-width:0}
+#lead-form input,#lead-form select{font:16px var(--body);padding:10px 12px;border:1.5px solid var(--ink);border-radius:3px;background:var(--sheet);color:var(--ink);width:100%;text-transform:none;letter-spacing:0}
+#lead-form .full,#lead-form .consent{grid-column:1/-1}
+#lead-form .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+#lead-form .consent{font-size:13px;color:var(--muted)}
+#lead-form button{cursor:pointer;justify-self:start;font:inherit;font-weight:600}
+#lead-form button:disabled{opacity:.6;cursor:wait}
+#lead-status{font-size:14px;min-height:1.4em;align-self:center}

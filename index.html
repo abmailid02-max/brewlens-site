@@ -36,5 +36,19 @@
 </div></section>
 <section class="pilot" id="pilot"><div><div class="eyebrow" style="color:var(--paper);opacity:.7">Pilot</div><h2>Try it on <span class="acc">one part number.</span></h2><p>Tell us which service you want and send one drawing or a handful of parts. We come back with a result you can check.</p><p class="reply">Reply to the message this link came in. Contact details: add before sending.</p></div>
 <ol><li>You pick one part number and the service.</li><li>We sign an NDA if you want one.</li><li>We return the result and show how we got it.</li><li>You decide whether to continue.</li></ol></section>
+<section class="interest" id="interest">
+<div class="eyebrow">Stay in touch</div>
+<h2>Interested? Leave your details.</h2>
+<form id="lead-form" data-interest="both">
+<label>Name<input name="name" id="lead-name" required maxlength="100" autocomplete="name"></label>
+<label>Email<input name="email" id="lead-email" type="email" required maxlength="150" autocomplete="email"></label>
+<label>Interested in<select name="interest" id="lead-interest" required><option value="drawing-annotation">Drawing annotation</option><option value="part-inspection">Part inspection</option><option value="both">Both</option></select></label>
+<label>Company (optional)<input name="company" id="lead-company" maxlength="100" autocomplete="organization"></label>
+<div class="hp" aria-hidden="true"><label>Website<input name="website" id="lead-website" tabindex="-1" autocomplete="off"></label></div>
+<p class="consent full">We use these details only to contact you about BrewLens.</p>
+<div class="full" style="display:flex;gap:16px;align-items:center;flex-wrap:wrap"><button class="btn" type="submit">Send</button><span id="lead-status" role="status"></span></div>
+</form>
+<script type="module" src="lead-form.js"></script>
+</section>
 <footer><span>BrewLens · Bengaluru</span><span>Sample drawings and readings on these pages are made up for illustration.</span></footer>
 </div>
